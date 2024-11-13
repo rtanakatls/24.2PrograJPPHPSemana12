@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS game1;
+CREATE DATABASE game1;
+
+USE game1;
+
+CREATE TABLE users(
+    user_id INT NOT NULL AUTO_INCREMENT,
+    username VARCHAR(100) NOT NULL,
+    score INT NOT NULL,
+    PRIMARY KEY(user_id)
+);
