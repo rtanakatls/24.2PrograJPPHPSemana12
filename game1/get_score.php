@@ -16,7 +16,7 @@ else
     if ($result->num_rows > 0)
     {
         $score = $result->fetch_assoc()["score"];
-        echo json_encode(["message" => "sucess", "score" => $score]);
+        echo json_encode(["message" => "success", "score" => $score]);
     }
     else
     {

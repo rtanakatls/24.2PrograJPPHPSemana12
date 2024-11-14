@@ -14,11 +14,11 @@ else
     if ($result->num_rows > 0)
     {
         $data = $result->fetch_all(MYSQLI_ASSOC);
-        echo json_encode(["message" => "sucess", "data" => $data]);
+        echo json_encode(["message" => "success", "data" => $data]);
     }
     else
     {
-        echo json_encode(["message" => "sucess", "data" => null]);
+        echo json_encode(["message" => "success", "data" => null]);
     }
     $mysqli->close();
 }
